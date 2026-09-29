@@ -1,0 +1,563 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container{
+    background-color: rgb(87, 87, 228);
+    height: 100vh;
+}
+
+/* ---------------------Navbar -------------------------------*/
+
+.nav {
+    background-color: rgb(12, 78, 12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width:100%;
+    top: 15px;
+    border-radius: 20px;
+    /* margin-left:0.5%; */
+    opacity: 0.7;
+    z-index:999;
+}
+
+.logo{
+    /* height: 10%; */
+    width:50px;
+
+}
+
+nav .subNav {
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: 1s;
+    margin-left:65%;
+}
+
+nav .subNav a {
+    position: relative;
+    font-size: 25px;
+    /* background-color: greenyellow; */
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(254, 255, 255);
+}
+/* --------------------------Navbar end------------------------- */
+/* ---------------------Home start ------------------------------*/
+
+.box1{
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    background-image: url("./homeimg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.quats {
+    padding-bottom: 10px;
+}
+
+/* .box1 h1{
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 2px rgb(237, 237, 237);
+} */
+ .title h1{
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 2px rgb(237, 237, 237);
+ }
+
+ .title p {
+    color: aliceblue;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+.search{
+    width: 500px;
+    height: 50px;
+    border:none;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.search1{
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(93, 154, 109);
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+    padding-left: 20px;
+}
+
+.search1:focus{
+    outline: none;
+    cursor: pointer;
+}
+
+
+.search2{
+    width: 30%;
+    height: 100%;
+    border:none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(93, 154, 109);
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.search2:hover{
+    cursor: pointer;
+    transition:0.3s;
+    background-color: rgb(116, 88, 18);
+}
+
+
+/* -------------------------Home end------------------------------- */
+/*------------------------------- About start ----------------------*/
+
+.box2{
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+    background-image: url("./rrr3.png");
+    background-size: cover;
+    background-repeat: no-repeat;   
+    /* padding-top: 10%; */
+    
+}
+.about{
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.para{
+    text-align: center;
+    min-height: 100px;
+    width: 80%;
+    /* background-color: rgb(246, 246, 246); */
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.para h1{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(138, 225, 94);
+    padding-top: 20px;
+    text-shadow: 2px 0px 0px rgb(253, 253, 253);
+    line-height: 50px;
+}
+
+.rrr{
+    color: rgb(5, 9, 6);
+}
+/* ---------------------------------About end---------------------------- */
+/*-------------------------------- Product start --------------------*/
+
+.box3{
+    min-height: 100vh;
+    background-image: url("./prt.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.box3 h1 {
+    color: gold;
+    text-align: center;
+    font-size: 50px;
+}
+
+.card{
+    min-height: 100%;
+    width: 100%;
+    /* background-color:aliceblue; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding:140px;
+}
+
+
+.p1{
+    height: 300px;
+    width: 250px;
+    background-color: rgb(147, 177, 71);
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    
+}
+
+.j1{
+    height: 57%;
+    width: 100%;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.p1:hover{
+   transform: scale(1.2)
+}
+
+
+h2{
+    text-align: center;
+    line-height: 50px;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.cart{
+    margin-left:13%;
+    height: 40px;
+    width: 75%;
+    border: 2px solid salmon;
+    border-radius: 15px;
+    background-color: rgb(214, 196, 103);
+    font-size: 20px;
+    color: rgb(2, 2, 2);
+}
+.cart:hover{
+    cursor: pointer;
+}
+
+.home3{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 80px;
+}
+
+/* -----------------------------product end--------------------- */
+/* ---------------------------------Contact start-------------------- */
+
+.box4{
+    min-height:100vh;
+    background-image: url("./rrr3.1.png");
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.ct1{
+    font-size: 40px;
+    padding-top: 10%;
+    color: rgb(199, 224, 77);
+    text-shadow: 0px 0px 2px rgb(104, 148, 100);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.detail {
+    min-height: 350px;
+    width: 600px;
+    border-radius: 20px;
+    padding-top: 4%;
+    margin-left: 1%;
+
+}
+
+.copy{
+    width: 100%;
+    height: 100px;
+    margin-top:5%;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align:center;
+}
+
+.copy1 {
+    color: rgb(255, 255, 255);
+    padding-top: 15px;
+    /* padding-bottom: 10px; */
+    font-size: 15px;
+
+}
+
+.copy2 {
+     color: rgb(130, 210, 125);
+     padding-top: 10px;
+}
+
+.enter {
+    width: 95%;
+    height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border:none;
+}
+
+.enter3 {
+    width: 95%;
+    height: 80px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border:none
+}
+
+.input1:checked+ .subNav{
+    left: -65%;
+}
+.input1{
+    display: none;
+}
+.icon1{
+    display: none;
+}
+
+.submit{
+    width: 95%;
+    min-height: 50px;
+    border-radius: 10px;
+    border:none;
+    background-color: rgb(93, 154, 109);
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.submit:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgb(5, 11, 16);
+}
+
+/* .home1{
+    color:red;
+} */
+
+.home2{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* -------------------------contact end------------------------ */
+/* ------------Media query start for mobile------------------- */
+/* =============================================================
+                      new code 18/09/00
+===============================================================*/
+
+@media (min-width:300px) and (max-width:600px) {
+    .box1{
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.pic1{
+    height:100%;
+    width: 100%;
+}
+
+.nav {
+        width: 100%;
+        height: 50px;
+}
+
+.subNav{
+    height: 300px;
+    width:100%;
+    border-radius: 20px;
+    background-color: rgb(39, 73, 149);
+    position: absolute;
+    top: 50px;
+    left: -300%;
+    flex-direction: column;
+}
+.input1{
+    display: none;
+}
+.icon1{
+    display: inline;
+}
+
+.logo1{
+    display: none;
+}
+
+.pic2{
+    height:300px;
+    width:300px;
+}
+.con{
+    height: 400px;
+    width: 300px;
+}
+
+
+
+.box2{
+
+    align-items: start;
+    gap:0px;
+
+}
+
+.para {
+    min-height: 400px;
+    width: 100%;
+    padding: 10px;
+}
+
+.pic{
+    height: 400px;
+    width: 100%;
+}
+
+.box3{
+    min-height: 100vh;
+    background-color: rgb(68, 144, 199); 
+}
+.card{
+    padding: 10px;
+    gap: 20px;
+}
+.con{
+    width:100%;
+    height: 80%;
+}
+ .search{
+    width:90%;
+ }
+ .detail{
+    border-radius: 0px;
+    width: 100%;
+ }
+
+}
+
+/* ==========================tab view========================== */
+
+@media (min-width:428px) and (max-width:770px) {
+    .box1{
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.pic1{
+    height:100%;
+    width: 100%;
+}
+
+.nav {
+        width: 100%;
+        height: 50px;
+}
+
+.subNav{
+    height: 300px;
+    width:100%;
+    border-radius: 20px;
+    background-color: rgb(39, 73, 149);
+    position: absolute;
+    top: 50px;
+    left: -300%;
+    flex-direction: column;
+}
+.input1{
+    display: none;
+}
+.icon1{
+    display: inline;
+}
+
+.logo1{
+    display: none;
+}
+.pic2{
+    height:300px;
+    width:300px;
+}
+.con{
+    height: 400px;
+    width: 300px;
+}
+
+.box2{
+
+    align-items: start;
+    gap:0px;
+
+}
+
+.para {
+    min-height: 400px;
+    width: 100%;
+    padding: 10px;
+}
+
+.pic{
+    height: 400px;
+    width: 100%;
+}
+
+.box3{
+    min-height: 100vh;
+    background-color: rgb(68, 144, 199); 
+}
+.card{
+    padding: 10px;
+    gap: 20px;
+}
+.con{
+    width:100%;
+    height: 80%;
+}
+ .search{
+    width:90%;
+ }
+ .detail{
+    border-radius: 0px;
+    width: 100%;
+ }
+
+.cont {
+    width: 100%;
+}
+
+
+}
+
